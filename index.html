@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Library Management System</h1>
+  </header>
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>Total Books: <span id="totalBooks">0</span></p>
+      <p>Books on Rent: <span id="rentedBooks">0</span></p>
+    </section>
+    <section id="bookList">
+      <h2>Book List</h2>
+      <ul id="books">
+        <!-- Books will be dynamically listed here -->
+      </ul>
+    </section>
+    <section id="adminPanel">
+      <h2>Admin Panel</h2>
+      <button id="addBookBtn">Add Book</button>
+    </section>
+
+    <!-- Modal for Adding Book -->
+    <div id="bookModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Add New Book</h2>
+        <form id="addBookForm">
+          <label for="bookTitle">Book Title:</label>
+          <input type="text" id="bookTitle" required>
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
