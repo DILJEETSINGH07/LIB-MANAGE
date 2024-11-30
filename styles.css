@@ -182,4 +182,16 @@ body {
       font-size: 1.5rem;
     }
   }
+ header {
+    background-image: url("https://i.pinimg.com/736x/39/c0/84/39c0845aecf578300eb237faab009ee1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
   
